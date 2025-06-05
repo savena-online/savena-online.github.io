@@ -1,68 +1,101 @@
-body {
-    background-color: white; 
-    font-family: 'Darker Grotesque', sans-serif;  
+
+.roboto-<body> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
- 
-.typing_container{
-    background-color: white; 
-    font-family: 'Darker Grotesque', sans-serif;  
+
+body {
+    background-color: lightyellow; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.email-content {
+  background-color: white;
+  background-clip: content-box, padding-box, border-box;
+    float: inherit;
+    box-shadow: 0 -8px 0 29px white;
+    margin-right: 26px;
+        margin-left: 5px;
+    
 }
 
 .new_message {
     font-family: sans-serif;
-    font-size: 10px;
-    color:dimgrey;
-    background-color: powderblue;
-    padding-top: 3px;
+    font-size: 14px;
+    color: darkgray;
+    background-clip: border-box;
+    background-color: #f2f6fd;
+    padding-top: 10px;
     padding-right: 10px;
-    padding-bottom: 3px;
-    padding-left: 28px;
+    padding-bottom: 10px;
+    padding-left: 25px;
      margin-top: 0px;
-  margin-bottom: 3px;
-  margin-right: -23px;
+  margin-bottom: 0px;
+  margin-right: -2px;
   margin-left: -25px;
 }
     
 
 h1 {
-    font-family: sans-serif;
+    font-family: 'Roboto';
     font-size: 15px;
-    color:dimgrey;
+    color:lightgray;
+    background-color: white;
 }
 
 .subject
 {
     border-bottom-style: solid;
-        border-width: 1px;
+    border-width: 1px;
+    padding-bottom: 9px;
+    border-bottom-color: lightgray;
+    box-shadow: 0 20px 0 29px white;
+    margin-right: 26px;
+        margin-left: 5px
 }
 
 body {border-style: solid;}
-body {border-color: powderblue}
+body {border-color: #f2f6fd;}
 
 body  
-    {padding-top: 0px;
-    padding-right: 20px;
+{
+    padding-top: px;
+    padding-right: 0;
     padding-bottom: 5px;
-    padding-left: 25px;}
+    padding-left: 25px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    margin-left: 50px;
+    animation: move 0.5s linear;
+  rposition: relative;
+  height: fit-content;
+}   
 
-body {
-  margin-top: 25px;
-  margin-bottom: 100px;
-  margin-right: 100px;
-  margin-left: 25px;
-}
-
-
+@keyframes move {
+  0% {
     
+     	transform: translate(80%, 80%);
+  }
+  100% {
+    
+      transform: translateX(0%, 0%);
+  }
+}
 
 .input-cursor-1.input-cursor {
       display: inline-block;
       width: 2px;
       height: 15px;
-      background-color: blue;
+      background-color: black;
       margin-left: 0px;
-      animation: blink .2s linear infinite alternate;
+      animation: blink .3s linear infinite alternate;
     }
+
 
 @keyframes blink {
     0% {opacity: 1;}

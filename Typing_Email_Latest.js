@@ -667,7 +667,7 @@ async function TypeMyWords(eleRef) {
     
    // while(true) {
       
-     await waitForMs(2000);   
+     await waitForMs(3500);   
     
       for(let j = 0; j < 1; j++) { //  "Hey
         await typeWord(myText[i], eleRef);  
